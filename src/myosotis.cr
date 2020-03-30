@@ -1,5 +1,6 @@
 require "option_parser"
 require "json"
+require "./persister"
 
 module Myosotis
   VERSION = "0.1.0"
@@ -37,7 +38,7 @@ module Myosotis
   To find anwers, simply ask a question, then press enter!
   HERE
 
-  @@file_name : String = "output/#{Random.new.hex(8)}.myo"
+  @@persister = Persister.new("output/#{Random.new.hex(8)}.myo")
 
   OptionParser.parse do |parser|
     parser.banner = "Forget me not."
@@ -55,7 +56,7 @@ module Myosotis
         a = gets
         next unless q && a
         questions[q] = a
-        persist(questions)
+        @@persister.persist(questions)
       end
       exit
     end
@@ -71,7 +72,7 @@ module Myosotis
         unless q
           next 
         end
-        answer = read_answer(file, q)
+        answer = @@persister.read_answer(file, q)
         unless answer
           puts "No answer to that." 
           next
@@ -106,18 +107,5 @@ module Myosotis
       puts
     end
   end
-
-  def self.persist(q_and_a_hash)
-    File.write(file_name, q_and_a_hash.to_json)
-  end
-
-  def self.read_answer(file, question)
-    json = JSON.parse(File.read(file))
-    any = json[question]?
-    any.as_s if any
-  end
-
-  def self.file_name
-    @@file_name
-  end
 end
+
