@@ -1,27 +1,19 @@
-# myosotis
+# Myosotis
 
-TODO: Write a description here
+What if you could send a conversation to someone, block them from all contact
+and only if they figured out the right questions, would they get the answers you
+had lined up? Finally, you'r insight would be beyond doubt. Your wisdom
+immortal. Your utter disregard for the value of their time illustrated beyond
+refute.
 
-## Installation
+Myosotis was designed to let you leave behind conversations, to only those that
+you want to, in your own time. 
 
-TODO: Write installation instructions here
+You design questions and answers, publish a blob of nonesense - only those armed
+with a key and the right questions can extract what is left for them. 
 
-## Usage
+Currently, it does none of that. But we'll get there.
 
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it (<https://github.com/your-github-user/myosotis/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-## Contributors
-
-- [Kasper Jensen](https://github.com/your-github-user) - creator and maintainer
+## PS:
+The crypto here is kinda hard. I'm gonna get it wrong. Don't use this
+irresponsibly. You rascal, you.
