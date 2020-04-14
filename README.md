@@ -2,7 +2,7 @@
 
 What if you could send a conversation to someone, block them from all contact
 and only if they figured out the right questions, would they get the answers you
-had lined up? Finally, you'r insight would be beyond doubt. Your wisdom
+had lined up? Finally, your insight would be beyond doubt. Your wisdom
 immortal. Your utter disregard for the value of their time illustrated beyond
 refute.
 
