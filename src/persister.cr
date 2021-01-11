@@ -4,7 +4,7 @@ class Persister
   property :private_key
 
   def initialize(@file_name : String)
-    @private_key = "spicy doritos reign supreme"
+    @private_key = "spicy"
   end
 
   def encrypted_list(hash)
@@ -50,7 +50,10 @@ class Persister
     encrypted_strings.each do |cipher_text|
       answer = aes_decrypt(cipher_text, "#{private_key}#{question}")
       return answer
+    rescue error
+      next
     end
+    "No answer found!"
   end
 
   def file_name
